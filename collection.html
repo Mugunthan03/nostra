@@ -12,25 +12,25 @@
 </head>
 
 <body class="font-sans">
-    <!-- popup bar -->
-    <div class="flex justify-evenly items-center bg-black text-white p-4 text-lg text-center cursor-pointer" id="popup">
-        <p>sign up and <strong>GET 20% OFF</strong> for your first order</p>
-        <p id="close">x</p>
-    </div>
+ <!-- popup bar -->
+ <div class="flex justify-evenly items-center bg-black text-white p-2 text-xs md:text-base text-center cursor-pointer" id="popup">
+    <p>sign up and <strong>GET 20% OFF</strong> for your first order</p>
+    <p id="close">x</p>
+</div>
 
-    <!--  side navigation -->
-    <nav class="flex items-center justify-between sticky top-0 z-20 bg-white">
+<!--  side navigation -->
+<nav class="flex items-center justify-between sticky top-0 z-20 bg-white px-4  md:px-10 py-2">
 
-        <h1 class="font-extrabold mt-3 text-3xl relative m-5">Nostra</h1>
+    <h1 class="font-extrabold  text-2xl  md:text-4xl">Nostra</h1>
 
-        <!-- hamburger icon -->
-        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+    <!-- hamburger icon -->
+    <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
 
         <!-- navigation list -->
-        <ul class="flex gap-20 hidden md:flex text-lg">
+        <ul class="hidden md:flex text-base md:text-lg space-x-8">
             <li class="hover:border-b-2 border-blue-600"><a href="./index.html">Home</a></li>
             <li class="hover:border-b-2 border-blue-600"><a href="./index.html">New Arrival</a></li>
             <li class="hover:border-b-2 border-blue-600"><a href="./index.html">Most wanted</a></li>
@@ -40,12 +40,12 @@
     </nav>
     <!-- side navbar -->
     <section id="sidenav" class="bg-black top-0 text-white p-6  absolute fixed z-20 transition-all duration-1000 "
-        style="width:50%;height: 100vh;left: -50%;">
-        <div class="text-right">
-            <p id="closenav" class="text-center inline cursor-pointer">x</p>
-        </div>
+    style="width:50%;height:100vh;left:-50%;">
+    <div class="text-right">
+        <p id="closenav" class="text-center inline cursor-pointer">x</p>
+    </div>
 
-        <ul class="flex flex-col gap-20 items-center text-lg ">
+    <ul class="flex flex-col gap-4 text-base md:text-lg ">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">New Arrival</a></li>
             <li><a href="index.html">Most wanted</a></li>
@@ -61,29 +61,29 @@
         <div class="border-r-2 border-black">
             <div class=" w-[25vw] md:w-[20vw] h-[100vh]  flex-1">
 
-                <h2 class="text-lg font-extrabold mt-5 md:text-3xl md:p-5">Category</h2>
-                <label class="block  p-2 font-semibold md:text-2xl "><input type="checkbox" id="summerCheckbox"
+                <h2 class="text-sm font-extrabold mt-5 md:text-xl md:p-5 lg:text-2xl">Category</h2>
+                <label class="block  p-2 font-semibold text-xs md:text-2xl "><input type="checkbox" id="summerCheckbox"
                         onchange="filterDresses()"> Summer</label>
-                <label class="block p-2 font-semibold md:text-2xl"><input type="checkbox" id="beachCheckbox"
+                <label class="block p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="beachCheckbox"
                         onchange="filterDresses()"> Beach</label>
-                <label class="block p-2 font-semibold md:text-2xl"><input type="checkbox" id="partyCheckbox"
+                <label class="block p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="partyCheckbox"
                         onchange="filterDresses()"> Party</label>
 
 
-                <h2 class="text-lg font-extrabold mt-5 md:text-3xl md:p-5">Color</h2>
-                <label class="block  p-2 font-semibold md:text-2xl"><input type="checkbox" id="redCheckbox"
+                <h2 class="text-sm font-extrabold mt-5 md:text-xl md:p-5 lg:text-2xl">Color</h2>
+                <label class="block  p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="redCheckbox"
                         onchange="filterDresses()"> Red</label>
-                <label class="block p-2 font-semibold md:text-2xl"><input type="checkbox" id="yellowCheckbox"
+                <label class="block p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="yellowCheckbox"
                         onchange="filterDresses()"> Yellow</label>
-                <label class="block p-2 font-semibold md:text-2xl"><input type="checkbox" id="greenCheckbox"
+                <label class="block p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="greenCheckbox"
                         onchange="filterDresses()"> Green</label>
-                <label class="block p-2 font-semibold md:text-2xl"><input type="checkbox" id="whiteCheckbox"
+                <label class="block p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="whiteCheckbox"
                         onchange="filterDresses()"> White</label>
 
-                <h2 class="text-lg font-extrabold mt-5 md:text-3xl md:p-5">Arrivals</h2>
-                <label class="block p-2  font-semibold md:text-2xl"><input type="checkbox" id="newCheckbox"
+                <h2 class="text-sm font-extrabold mt-5 md:text-xl md:p-5 lg:text-2xl">Arrivals</h2>
+                <label class="block p-2  font-semibold text-xs md:text-2xl"><input type="checkbox" id="newCheckbox"
                         onchange="filterDresses()"> New</label>
-                <label class="block p-2 font-semibold md:text-2xl"><input type="checkbox" id="oldCheckbox"
+                <label class="block p-2 font-semibold text-xs md:text-2xl"><input type="checkbox" id="oldCheckbox"
                         onchange="filterDresses()"> Old</label>
 
             </div>
@@ -91,13 +91,13 @@
 
         <!-- collection list  -->
 
-        <div class=" w-[70vw] md:w-[80vw] h-[100vh] flex-3 overflow-y-auto scroll">
+        <div class=" w-[70vw] md:w-[80vw] h-[100vh] flex-2 overflow-y-auto scroll">
             <div class="flex  justify-between p-2  mx-5 border rounded-lg border-black sticky top-0 bg-white">
 
 
                 <input type="text" placeholder="search" id="searchInput" oninput="filterDresses()"
                     class="w-full   bg-white outline-none ">
-                <img src="./images/icons/search (2).png" class="w-6">
+                <img src="./images/icons/search (2).png" class="w-6 ">
 
 
 
@@ -106,7 +106,7 @@
 
             <!-- Displayed Data Column -->
             <div class="overflow-x-scroll z-0">
-                <div id="dressContainer" class="grid grid-cols-3">
+                <div id="dressContainer" class="grid grid-cols-2 md:grid-cols-3">
                   
 
 
@@ -121,36 +121,57 @@
 
     <!-- subscribe -->
 
+   
+ <div class="p-5">
+    <div class="bg-gray-800 flex md:flex-row  h-[30vh] md:h-[50vh] md:mt-12">
+        <div>
+            <img src="./images/header/offer.jpg" alt="" class="h-[30vh] md:h-[50vh] w-full md:w-auto object-cover p-5"></div>
+        <div class="text-white p-2 md:w-[50%]">
+        
+            <h1 class="text-xl mt-[10%] font-bold md:text-5xl lg:text-7xl">Limited Offer</h1>
+            <h2 class=" text-xs md:text-2xl lg:text-4xl mt-3">35% OFF on this for the first 30 customers</h2>
+            <button class="bg-white text-black text-xs mt-2 p-1 border rounded-lg md:text-xl lg:mt-5">Shop Now ➜</button>
+        </div>
+       
+    </div>
+</div>
+
+    <!-- subscribe -->
+
     <div class="text-center p-3 mt-3 ">
-        <h1 class="font-bold text-xl md:text-6xl">Join our News Letter</h1>
-        <p class="text-sm mt-2 md:text-4xl">Signup for our email newspaper to get exclusive discounts, updates and more
-        </p>
-        <input type="text" class="border border-black border-solid border-2  w-[75vw] mt-5 p-2"><br>
-        <button class="bg-black text-white mt-3 p-2 w-[25%] rounded-2xl md:text-2xl ">subscribe ➜</button>
+        <h1 class="font-bold text-xl md:text-4xl">Join our News Letter</h1>
+        <p class="text-sm mt-2 md:text-2xl" >Signup for our email newspaper to get exclusive discounts, updates and more</p>
+        <input type="text" class="border border-black border-solid border-2  w-[75vw] mt-5 p-1"><br>
+       <button class="bg-black text-white mt-3 p-2 w-[50%] rounded-2xl md:text-2xl md:w-[30%] lg:w-[20%]">subscribe ➜</button>
     </div>
 
     <!-- footer -->
-    <section>
+<section>
 
-        <div class=" flex bg-gray-800 h-[30vh] md:h-[50vh]">
-            <div class="text-white p-10 ">
-                <h1 class="font-bold md:text-5xl">Nostra</h1>
-                <p class="mt-5 md:text-3xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus vel
-                    ipsum cupiditate illum ipsa!</p>
-                <div class="flex  mt-3 md:p-5 gap-16">
-                    <img src="./images/icons/instagram (2).png" alt="" class="w-5 md:w-8">
-                    <img src="./images/icons/twitter (1).png" alt="" class="w-5 md:w-8">
-                    <img src="./images/icons/facebook (1).png" alt="" class="w-5 md:w-8">
-                </div>
-                <p class="mt-3 md:text-2xl ">@2024 Nostro.com</p>
-            </div>
-
+    <div class=" flex bg-gray-800 h-[30vh] md:h-[50vh]">
+        <div class="text-white p-5 md:p-10 ">
+            <h1 class="font-bold md:text-4xl">Nostra</h1>
+            <p class="mt-5 md:text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus vel ipsum cupiditate illum ipsa!</p>
+            <div class="flex  mt-3 md:p-5 gap-16">
+            <img src="./images/icons/instagram (2).png" alt="" class="w-5 md:w-8">
+            <img src="./images/icons/twitter (1).png" alt="" class="w-5 md:w-8">
+            <img src="./images/icons/facebook (1).png" alt="" class="w-5 md:w-8">
+        </div>
+            <p class="mt-3 md:text-2xl ">@2024 Nostro.com</p>
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <style>
+         body {
+            overflow-y: scroll;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
         /* Hide the scrollbar  */
         .scroll::-webkit-scrollbar {
             display: none;
